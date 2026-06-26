@@ -1,79 +1,41 @@
-# Google Play Store Dashboard Project
+# Google Play Store Dashboard
 
-## Project Overview
-
-This project analyzes Google Play Store applications by studying the relationship between app size and user ratings. The main objective was to create an interactive bubble chart that helps understand how app size, ratings, and installs are related.
-
-## Datasets Used
-
-* Play Store Data.csv
-* User Reviews.csv
-
-## Project Workflow
-
-### Data Cleaning
-
-* Loaded both datasets using Pandas.
-* Removed duplicate applications.
-* Converted Reviews, Rating, and Installs into numeric data types.
-* Converted app sizes into megabytes (MB).
-* Handled missing values and inconsistent data.
-
-### Data Integration
-
-* Calculated the average Sentiment Subjectivity for each app from the User Reviews dataset.
-* Merged both datasets using the App column.
-
-### Filters Applied
-
-The dashboard displays only applications that satisfy the following conditions:
-
-* Rating greater than 3.5
-* Reviews greater than 500
-* Installs greater than 50,000
-* Sentiment Subjectivity greater than 0.5
-* Categories restricted to:
-
-  * Game
-  * Beauty
-  * Business
-  * Comics
-  * Communication
-  * Dating
-  * Entertainment
-  * Social
-  * Events
-* Applications containing the letter "S" in their names were excluded.
-
-### Category Customization
-
-* Beauty was translated into Hindi: **सौंदर्य**
-* Business was translated into Tamil: **வணிகம்**
-* Dating was translated into German: **Partnersuche**
-* The Game category was highlighted in pink.
-
-## Visualization
-
-An interactive Plotly Bubble Chart was created where:
-
-* X-axis: App Size (MB)
-* Y-axis: Average Rating
-* Bubble Size: Number of Installs
-* Bubble Color: Application Category
-
-The chart supports interactive features such as hovering, zooming, and filtering through legends.
-
-## Business Rule
-
-As per the internship requirements, the bubble chart is configured to be displayed only between **5:00 PM IST and 7:00 PM IST**.
+This repository contains my internship project completed using the **Google Play Store** dataset. The project focuses on data cleaning, data transformation, and building interactive dashboards with **Python, Pandas, and Plotly**.
 
 ## Technologies Used
 
 * Python
 * Pandas
+* NumPy
 * Plotly
 * Jupyter Notebook
 
-## Conclusion
+## Project Tasks
 
-This project demonstrates the complete workflow of a small data analytics project, including data cleaning, transformation, integration, filtering, and interactive data visualization using Python.
+* **Task 1:** Interactive Bubble Chart
+* **Task 2:** Choropleth Map
+* **Task 3:** Time Series Line Chart
+* **Task 4:** Stacked Area Chart
+* **Task 5:** Grouped Bar Chart
+* **Task 6:** Dual-Axis Chart
+
+Each dashboard applies different filtering conditions, business rules, and time-based visibility requirements as specified in the internship tasks.
+
+## Dataset
+
+* Play Store Data.csv
+* User Reviews.csv
+
+## Repository Contents
+
+* Jupyter Notebooks for all six tasks
+* Interactive Plotly HTML dashboards
+* Dashboard screenshots
+* Project report
+* README
+
+## Author
+
+**Vikas**
+
+Data Engineering and Data Analytics Learner and intern
